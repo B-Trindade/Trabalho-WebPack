@@ -1,0 +1,25 @@
+{
+  "name": "trabalho-webpack",
+  "version": "1.0.0",
+  "description": "versao do trabalho de bancos de dados utilizando outras tecnologias",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B-Trindade/Trabalho-WebPack.git"
+  },
+  "author": "B-Trindade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/B-Trindade/Trabalho-WebPack/issues"
+  },
+  "homepage": "https://github.com/B-Trindade/Trabalho-WebPack#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.3"
+  }
+}
