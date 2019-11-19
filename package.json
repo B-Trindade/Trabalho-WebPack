@@ -4,7 +4,9 @@
   "description": "versao do trabalho de bancos de dados utilizando outras tecnologias",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/B-Trindade/Trabalho-WebPack#readme",
   "devDependencies": {
+    "@babel/core": "^7.7.2",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
