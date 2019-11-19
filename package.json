@@ -17,9 +17,16 @@
   },
   "homepage": "https://github.com/B-Trindade/Trabalho-WebPack#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.2"
   },
   "dependencies": {
-    "chart.js": "^2.9.3"
+    "chart.js": "^2.9.3",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }
