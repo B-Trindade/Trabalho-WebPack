@@ -1,10 +1,14 @@
-react
-react-dom
-webpack
-webpack-dev-server
-webpack-cli
-@babel/core
-babel-loader
-@babel/preset-env
-@babel/preset-react
-html-webpack-plugin
+'''Dependencies:'''
+    react
+    react-dom
+    chart.js
+    webpack-dev-server
+    webpack-cli
+
+'''Dev Dependencies:'''
+    webpack
+    @babel/core
+    babel-loader
+    @babel/preset-env
+    @babel/preset-react
+    html-webpack-plugin
