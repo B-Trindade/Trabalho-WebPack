@@ -22,6 +22,6 @@ object Linha_VLT: Table() {
 }
 
 object Estacao_Linha_VLT: Table() {
-    val idEstacao = integer("ID_Est_Metro").references(Estacao_VLT.id)
-    val idLinha = integer("ID_Linha_Metro").references(Linha_VLT.id)
+    val idEstacao = integer("ID_Est_VLT").references(Estacao_VLT.id)
+    val idLinha = integer("ID_Linha_VLT").references(Linha_VLT.id)
 }

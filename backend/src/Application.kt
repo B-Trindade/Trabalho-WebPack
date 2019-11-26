@@ -44,6 +44,50 @@ fun Application.module(testing: Boolean = false) {
                     call.respond(response)
                 }
             }
+            route("vlt") {
+                get("estacoes") {
+                    val array = TransportService().getAllVLTStations()
+                    call.respond(array)
+                }
+                get("estacoes/{param}") {
+                    val param = call.parameters["param"]!!
+                    val type = if (param.toIntOrNull() == null) "string" else "integer"
+                    val response = if(type == "integer") TransportService().getVLTStationById( param.toInt() ) else TransportService().getVLTStationsByName(param)
+                    call.respond(response)
+                }
+                get("linhas") {
+                    val array = TransportService().getAllVLTLines()
+                    call.respond(array)
+                }
+                get("linhas/{param}") {
+                    val param = call.parameters["param"]!!
+                    val type = if (param.toIntOrNull() == null) "string" else "integer"
+                    val response = if(type == "integer") TransportService().getVLTLinesById( param.toInt() ) else TransportService().getVLTLinesByName(param)
+                    call.respond(response)
+                }
+            }
+            route("metro") {
+                get("estacoes") {
+                    val array = TransportService().getAllMetroStations()
+                    call.respond(array)
+                }
+                get("estacoes/{param}") {
+                    val param = call.parameters["param"]!!
+                    val type = if (param.toIntOrNull() == null) "string" else "integer"
+                    val response = if(type == "integer") TransportService().getMetroStationById( param.toInt() ) else TransportService().getMetroStationsByName(param)
+                    call.respond(response)
+                }
+                get("linhas") {
+                    val array = TransportService().getAllMetroLines()
+                    call.respond(array)
+                }
+                get("linhas/{param}") {
+                    val param = call.parameters["param"]!!
+                    val type = if (param.toIntOrNull() == null) "string" else "integer"
+                    val response = if(type == "integer") TransportService().getMetroLinesById( param.toInt() ) else TransportService().getMetroLinesByName(param)
+                    call.respond(response)
+                }
+            }
         }
 
 //        get("/brt/{nome_estacao}") {

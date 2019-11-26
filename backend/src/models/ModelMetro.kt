@@ -26,6 +26,6 @@ object Estacao_Linha_Metro: Table() {
 }
 
 object Saidas_Metro: Table() {
-    val idEstacao = integer("ID_Est_Metro")
+    val idEstacao = integer("ID_Est_Metro").references(Estacao_Metro.id)
     val nome = varchar("Nome_Saida", 40)
 }
