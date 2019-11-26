@@ -20,6 +20,8 @@
   "homepage": "https://github.com/B-Trindade/Trabalho-WebPack#readme",
   "devDependencies": {
     "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-async-to-generator": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.4",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "babel-core": "^6.26.3",
@@ -30,6 +32,7 @@
     "webpack": "^4.41.2"
   },
   "dependencies": {
+    "@babel/runtime": "^7.7.4",
     "chart.js": "^2.9.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

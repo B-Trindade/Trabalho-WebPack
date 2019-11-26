@@ -7,9 +7,10 @@ class App extends Component {
 }
 
 function newFunction() {
-    return (<div>
-        <h1>React App</h1>
-    </div>);
+    const data = "React App!";
+    return (
+        <h1>{data}</h1>
+        );
 }
 export default App;
 
