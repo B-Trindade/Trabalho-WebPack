@@ -13,7 +13,11 @@ async function saidasAPI() {
     const response = await fetch(saidas_url);
     const data = await response.json();
     const login = data.login;
-    return(<p>[{data}]</p>);
+    return(
+        <span>
+            {data}
+        </span>
+    );
 }
 
 export default Saidas;
